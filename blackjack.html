@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-------CSS------->
+    <link rel="stylesheet" href="css/blackjack.style.css">
+    <!-------Favicon------->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Fav/favicon-16x16.png">
+    <link rel="manifest" href="images/Fav/site.webmanifest">
+    <title>Blackjack</title>
+</head>
+
+<body>
+    <!-------Blackjack game------->
+    <div class="outside-container">
+        <div class="game-container">
+            <div class="header">
+                <div class="main-title">
+                    <h2>Blackjack</h2>
+                    <button class="btn btn-guide "
+                        data-tooltip="Try to get the higest score you can! But remember, your score must be higher than the Bot's, minimum at 16 and maximum at 21 or else, the bot will win. Click the Hit button to get a new card, Stand button to end your turn/start the Bot turn, and Deal to start a new game."
+                        id="guide"><a href="https://en.wikipedia.org/wiki/Blackjack" target="_blank">Guide</a></button>
+                </div>
+                <a href="#" class="toggle-button" id="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="table-result invi statistic-table" id="statistic-table">
+                    <table>
+                        <thead>Your Statistics
+                            <tr>
+                                <th>Wins</th>
+                                <th>Losses</th>
+                                <th>Draws</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span id="wins">0</span></td>
+                                <td><span id="losses">0</span></td>
+                                <td><span id="draws">0</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h3 id="lets-play"><span id="blackjack-result">Let's play</span></h3>
+            <div class="flex-blackjack-row-1 blackjack-row">
+                <div id="your-box">
+                    <h2>You: <span id="your-blackjack-result">0</span></h2>
+                </div>
+                <div id="dealer-box">
+                    <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="blackjack-row command-button">
+            <div>
+                <button class="btn btn-hit mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn btn-stand mr-2 text-white" id="blackjack-stand-button">Stand</button>
+                <button class="btn btn-deal" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+    </div>
+    <!-------Blackjack script------->
+    <script src="script/blackjack-script.js" async></script>
+</body>
+
+</html>

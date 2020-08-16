@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-------CSS------->
+    <link rel="stylesheet" href="css/tictactoe.css">
+    <title>Tic-tac-toe</title>
+</head>
+
+<body>
+    <!-------Tic-tac-toe game container------->
+    <div class="start-game show" id="start-game">
+        <div class="choose">Choose your fighter!</div>
+        <div class="">
+            <button class="mark" data-mark='x'>X</button>
+            <button class="mark" data-mark='circle'>O</button>
+        </div>
+    </div>
+    <h1 class="game-title">Tic Tac Toe</h1>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+
+    <div class="winning-message" id="winningMessage">
+        <div class="" data-winning-message-text>X Won!</div>
+        <button id="restartButton">Restart</button>
+    </div>
+
+    <!-------Tic-tac-toe script------->
+    <script src="script/tictactoe-script.js" defer></script>
+</body>
+
+</html>

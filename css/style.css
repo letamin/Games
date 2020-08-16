@@ -6,7 +6,7 @@
 
 .body {
   height: 100vh;
-  background: url("/images/background.jpg");
+  background: url("images/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,19 +45,19 @@
 }
 
 .blackjack-img {
-  background: url("/images/blackjack.png");
+  background: url("images/blackjack.png");
 }
 
 .minesweeper-img {
-  background: url("/images/minesweeperjpg.jpg");
+  background: url("images/minesweeperjpg.jpg");
 }
 
 .tic-tac-toe-img {
-  background: url("/images/tictactoe.png");
+  background: url("images/tictactoe.png");
 }
 
 .battleship-img {
-  background: url("/images/battleship.png");
+  background: url("images/battleship.png");
 }
 
 .game-img {

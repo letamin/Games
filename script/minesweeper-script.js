@@ -95,12 +95,16 @@ function cellClick(cell) {
     if (cell.classList.contains('checked') || cell.classList.contains('flag')) return;
     else cell.classList.add('checked');
 
-    let cellValue = cell.getAttribute('data');
     if (!(cell.classList.contains('bomb'))) {
         if (validCellsCheck()) {
             gameOver(!isGameOver);
         } else {
+            let cellValue = cell.getAttribute('data');
             if (cellValue != 0) {
+                if (cellValue == 1) cell.classList.add('cell-one');
+                if (cellValue == 2) cell.classList.add('cell-two');
+                if (cellValue == 3) cell.classList.add('cell-three');
+                if (cellValue == 4) cell.classList.add('cell-four');
                 cell.innerHTML = cellValue;
             } else {
                 //If a cell has no bombs around, call the cellClick function for all of its neighbors which is not yet opened and no flag

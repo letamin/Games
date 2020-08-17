@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #457b9d;
+  background: #073b4c;
   overflow: hidden;
 }
 
@@ -19,7 +19,6 @@ body {
 }
 
 .cell {
-  background: grey;
   border: 1px solid black;
   cursor: pointer;
   text-align: center;
@@ -28,16 +27,16 @@ body {
   font-size: 1.2em;
   border: 5px solid;
   border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+  font-weight: bold;
 }
 
 .cell:hover {
-  opacity: 0.75;
+  background: #e4e3de;
 }
 
 .checked {
   background-color: #ebeae9;
-  border: 2px solid;
-  border-color: #9c998d;
+  border: 2px solid #9c998d;
 }
 
 .game-over-layer {
@@ -93,6 +92,22 @@ body {
   font-size: 1.5em;
   margin-bottom: 1em;
   color: #fff;
+}
+
+.cell-one {
+  color: #e76346;
+}
+
+.cell-two {
+  color: #4199d3;
+}
+
+.cell-three {
+  color: #57da59;
+}
+
+.cell-four {
+  color: #bb41d3;
 }
 
 @media (max-width: 768px) {

@@ -20,6 +20,8 @@ const WINNING_COMBINATIONS = [
     [2, 4, 6]
 ]
 
+const hitSound = new Audio('sounds/Blackjack-sounds/swish.m4a');
+
 initialize();
 
 function initialize() {
@@ -86,6 +88,7 @@ function endGame(draw) {
 
 function placeMark(cell, currentClass) {
     cell.classList.add(currentClass);
+    hitSound.play();
 }
 
 function swapTurns() {

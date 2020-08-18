@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------CSS------->
+    <link rel="stylesheet" href="css/mixmatch.style.css">
+    <title>Mix-Or-Match</title>
+</head>
+
+<body>
+
+    <!-------Overlays------->
+    <h1 class="page-title">Mix-Or-Match</h1>
+    <div class="overlay-text visible">
+        Click to start
+    </div>
+    <div class="overlay-text" id="game-over-text">
+        Game over
+        <span class="overlay-text-small">Click to restart</span>
+    </div>
+    <div class="overlay-text" id="victory-text">
+        Victory
+        <span class="overlay-text-small">Click to restart</span>
+    </div>
+
+    <!------Games container------->
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Bat.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Bat.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Bones.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Bones.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Cauldron.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Cauldron.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Dracula.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Dracula.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Eye.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Eye.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Ghost.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Ghost.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Pumpkin.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Pumpkin.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Skull.png" class="card-value">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/Cobweb.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Spider.png" class="spider">
+            </div>
+            <div class="card-front card-face">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-top-right">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-left">
+                <img src="images/MixOrMatch-img/CobwebGrey.png" class="cob-web cob-web-bottom-right">
+                <img src="images/MixOrMatch-img/Skull.png" class="card-value">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script/mixmatch-script.js" defer></script>
+</body>
+
+</html>

@@ -18,9 +18,9 @@ var blackjackGame = {
 //Initialize the game at first
 const YOU = blackjackGame['you'];
 const DEALER = blackjackGame['dealer'];
-const hitSound = new Audio('sounds/swish.m4a');
-const winSound = new Audio('sounds/cash.mp3');
-const lostSound = new Audio('sounds/aww.mp3');
+const hitSound = new Audio('sounds/Blackjack-sounds/swish.m4a');
+const winSound = new Audio('sounds/Blackjack-sounds/cash.mp3');
+const lostSound = new Audio('sounds/Blackjack-sounds/aww.mp3');
 var toggleButton = document.getElementById('toggle-button');
 var statisticTable = document.getElementById('statistic-table');
 
@@ -83,7 +83,7 @@ function gameRunning(player) {
 function showCard(card, cardType, activePlayer) {
     if (activePlayer['score'] <= 21) {
         let cardImage = document.createElement('img');
-        cardImage.src = `images/${card + cardType}.png`;
+        cardImage.src = `images/Blackjack-img/${card + cardType}.png`;
         document.querySelector(activePlayer['div']).appendChild(cardImage);
         hitSound.play();
     }

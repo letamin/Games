@@ -2,4 +2,5 @@
 
 Let's have some fun with games
 
-https://letamin.github.io/Games/
+Go here to begin: https://letamin.github.io/Games/
+
